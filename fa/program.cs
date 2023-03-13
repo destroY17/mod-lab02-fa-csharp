@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace fans
 {
-  public class State
-  {
-    public string Name;
-    public Dictionary<char, State> Transitions;
-    public bool IsAcceptState;
-  }
+    public class State
+    {
+        public string Name;
+        public Dictionary<char, State> Transitions;
+        public bool IsAcceptState;
+    }
 
-
-  public class FA1
+    public class FA1
     {
         private static State initialState = new State()
         {
